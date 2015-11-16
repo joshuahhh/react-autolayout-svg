@@ -22,7 +22,7 @@ var AutoLayoutSVG = React.createClass({
     const {children, width, height, format, spacing, extended} = this.props;
 
     const constraints = AutoLayout.VisualFormat.parse(format, {extended});
-    
+
     var view = new AutoLayout.View({
       constraints,
       spacing,
@@ -66,4 +66,4 @@ AutoLayoutSVG.PropsCallback = React.createClass({
 });
 
 
-export default AutoLayoutSVG;
+module.exports = AutoLayoutSVG;
